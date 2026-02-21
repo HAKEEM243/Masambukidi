@@ -1,16 +1,15 @@
 // Service Worker — Masambukidi Protection E.LU.C.CO.
 // v3.0 — PWA complète avec push notifications et cache intelligent
 
-const CACHE_NAME = 'masambukidi-v3';
-const STATIC_CACHE = 'masambukidi-static-v3';
-const API_CACHE = 'masambukidi-api-v3';
+const CACHE_NAME = 'masambukidi-v4';
+const STATIC_CACHE = 'masambukidi-static-v4';
+const API_CACHE = 'masambukidi-api-v4';
 
 // Ressources à pré-cacher
 const PRECACHE_URLS = [
   '/',
   '/signaler',
   '/verifier',
-  '/galerie',
   '/autorisation',
   '/qui-sommes-nous',
   '/static/logo-elucco.png',
@@ -261,4 +260,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker Masambukidi v3 chargé');
+console.log('[SW] Service Worker Masambukidi v4 chargé');
