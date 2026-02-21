@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js"></script>
   <style>
     :root {
       --gold: #C9A227; --gold-light: #E8C84A; --bg: #050508; --bg-card: #0D0D18;
@@ -18,8 +17,6 @@
     }
     *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
     body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
-    ::-webkit-scrollbar { width:5px; } ::-webkit-scrollbar-thumb { background: #9B7A1A; border-radius:3px; }
-
     nav {
       background: rgba(5,5,8,0.96); backdrop-filter: blur(20px);
       border-bottom: 1px solid rgba(201,162,39,0.15);
@@ -34,15 +31,10 @@
     .nav-links a:hover { color:var(--gold); }
     .nav-links .active-link { background:rgba(201,162,39,0.1); color:var(--gold); font-weight:600; }
 
-    .page-hero {
-      background: linear-gradient(135deg, #050508, #0A0A18);
-      border-bottom: 1px solid var(--border);
-      padding: 60px 40px;
-      text-align: center;
-    }
+    .page-hero { background: linear-gradient(135deg, #050508, #0A0A18); border-bottom: 1px solid var(--border); padding: 60px 40px; text-align: center; }
     .page-tag { display:inline-block; background:rgba(139,26,26,0.15); border:1px solid rgba(139,26,26,0.3); color:#cc3333; font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:5px 14px; border-radius:20px; margin-bottom:20px; }
     .page-title { font-family:'Playfair Display',serif; font-size:clamp(28px,4vw,44px); font-weight:700; color:#fff; margin-bottom:12px; }
-    .page-desc { font-size:15px; color:var(--text-muted); max-width:540px; margin:0 auto; line-height:1.7; }
+    .page-desc { font-size:15px; color:var(--text-muted); max-width:580px; margin:0 auto; line-height:1.7; }
 
     .form-container { max-width: 820px; margin: 0 auto; padding: 60px 40px; }
     .form-card { background:var(--bg-card); border:1px solid var(--border); border-radius:16px; padding:40px; margin-bottom:24px; }
@@ -59,9 +51,8 @@
     }
     .field-input:focus { outline:none; border-color:rgba(201,162,39,0.5); }
     .field-input::placeholder { color:var(--text-dim); }
-    select.field-input { appearance:none; cursor:pointer; }
-    select.field-input option { background:var(--bg-card); }
     textarea.field-input { resize:vertical; min-height:100px; }
+
     .btn-submit {
       background:var(--gold); color:#050508; border:none; padding:15px 40px;
       font-size:15px; font-weight:700; border-radius:10px; cursor:pointer;
@@ -79,7 +70,7 @@
     .result-error { background:rgba(122,31,31,0.12); border:1px solid rgba(122,31,31,0.3); }
 
     footer { background:var(--bg-card); border-top:1px solid var(--border); padding:32px 40px; text-align:center; }
-    footer p { font-size:12px; color:var(--text-dim); }
+    footer p { font-size:12px; color:var(--text-dim); line-height: 1.7; }
     footer a { color:var(--gold); text-decoration:none; }
 
     @media (max-width:768px) {
@@ -93,88 +84,94 @@
 <nav>
   <a href="/" class="nav-brand">
     <img src="/static/logo-elucco.png" alt="Logo E.LU.C.CO.">
-    <span class="nav-brand-name">E.LU.C.CO.</span>
+    <span class="nav-brand-name">E.LU.C.CO. Masambukidi</span>
   </a>
   <ul class="nav-links">
     <li><a href="/">Accueil</a></li>
-    <li><a href="/qui-sommes-nous">À Propos</a></li>
-    <li><a href="/galerie">Galerie</a></li>
-    <li><a href="/verifier">Vérification</a></li>
-    
+    <li><a href="/verifier">Vérifier</a></li>
     <li><a href="/signaler" class="active-link">Signaler</a></li>
   </ul>
 </nav>
 
-<div class="page-hero">
-  <div class="page-tag">Action Officielle</div>
-  <h1 class="page-title">Signaler un Abus</h1>
-  <p class="page-desc">Signalez toute utilisation non autorisée du nom, de l'image ou de la réputation de Sa Majesté Masambukidi I. Chaque signalement est traité sous 48h.</p>
-</div>
+<section class="page-hero">
+  <div class="page-tag">Alerte officielle</div>
+  <h1 class="page-title">Signaler un abus de manière professionnelle</h1>
+  <p class="page-desc">Ce formulaire Netlify Form sécurisé permet de centraliser les signalements, d'activer les notifications administrateur et d'offrir une confirmation immédiate au déclarant.</p>
+</section>
 
 <div class="form-container">
   <div class="notice-box">
-    <p>
-      <strong>Attention :</strong> Merci de fournir des informations précises et vérifiables. Tout signalement infondé pourra engager la responsabilité de son auteur.
-      Pour les questions d'urgence, contactez directement : <strong>masambukidiste1983@gmail.com</strong>
-    </p>
+    <p><strong>Important :</strong> toute fausse déclaration volontaire peut engager votre responsabilité. Les signalements sont enregistrés comme base exploitable juridiquement pour les actions de protection du nom et de l'image.</p>
   </div>
 
   <div class="form-card">
-    <div class="form-card-title"><i class="fas fa-flag"></i> Informations sur l'abus</div>
-    <div class="form-card-sub">Renseignez l'URL et les détails du contenu abusif constaté.</div>
+    <div class="form-card-title"><i class="fas fa-shield-alt"></i> Formulaire de signalement sécurisé</div>
+    <div class="form-card-sub">Les données sont envoyées via Netlify Forms. Vous pouvez activer les notifications administrateur depuis le tableau de bord Netlify.</div>
 
-    <form id="reportForm" onsubmit="event.preventDefault(); submitReport();">
+    <form id="reportForm" name="signalement-pro" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="signalement-pro">
+      <p hidden>
+        <label>Ne pas remplir ce champ : <input name="bot-field"></label>
+      </p>
+
+      <div class="form-card-title"><i class="fas fa-flag"></i> Informations sur l'abus</div>
+      <div class="form-card-sub">Renseignez l'URL et les détails du contenu abusif constaté.</div>
+
       <div class="form-group">
-        <label>URL du contenu litigieux *</label>
-        <input type="url" id="r_url" class="field-input" placeholder="https://www.facebook.com/..." required>
+        <label for="r_url">URL du contenu litigieux *</label>
+        <input type="url" id="r_url" name="url_litigieuse" class="field-input" placeholder="https://www.facebook.com/..." required>
       </div>
       <div class="form-row">
         <div class="form-group">
-          <label>Plateforme *</label>
-          <select id="r_platform" class="field-input" required>
+          <label for="r_platform">Plateforme *</label>
+          <select id="r_platform" name="plateforme" class="field-input" required>
             <option value="">Sélectionner...</option>
-            <option value="facebook">Facebook</option>
-            <option value="youtube">YouTube</option>
-            <option value="instagram">Instagram</option>
-            <option value="tiktok">TikTok</option>
-            <option value="twitter">Twitter / X</option>
-            <option value="whatsapp">WhatsApp</option>
-            <option value="website">Site web</option>
-            <option value="other">Autre</option>
+            <option>Facebook</option>
+            <option>YouTube</option>
+            <option>Instagram</option>
+            <option>TikTok</option>
+            <option>Twitter / X</option>
+            <option>WhatsApp</option>
+            <option>Site web</option>
+            <option>Autre</option>
           </select>
         </div>
         <div class="form-group">
-          <label>Type d'abus *</label>
-          <select id="r_type" class="field-input" required>
+          <label for="r_type">Type d'abus *</label>
+          <select id="r_type" name="type_abus" class="field-input" required>
             <option value="">Sélectionner...</option>
-            <option value="usurpation_identite">Usurpation d'identité</option>
-            <option value="contenu_non_autorise">Utilisation non autorisée du nom/image</option>
-            <option value="diffamation">Diffamation / Fausses informations</option>
-            <option value="exploitation_commerciale">Exploitation commerciale non autorisée</option>
-            <option value="deepfake">Image/vidéo falsifiée (deepfake)</option>
-            <option value="harcelement">Harcèlement ou menaces</option>
-            <option value="autre">Autre</option>
+            <option>Usurpation d'identité</option>
+            <option>Utilisation non autorisée du nom/image</option>
+            <option>Diffamation / Fausses informations</option>
+            <option>Exploitation commerciale non autorisée</option>
+            <option>Image/vidéo falsifiée (deepfake)</option>
+            <option>Harcèlement ou menaces</option>
+            <option>Autre</option>
           </select>
         </div>
       </div>
       <div class="form-group">
-        <label>Description détaillée *</label>
-        <textarea id="r_description" class="field-input" rows="4" placeholder="Décrivez précisément ce que vous avez constaté : contenu du post, contexte, impact, etc." required></textarea>
+        <label for="r_description">Description détaillée *</label>
+        <textarea id="r_description" name="description" class="field-input" rows="4" placeholder="Décrivez précisément ce que vous avez constaté : contenu du post, contexte, impact, etc." required></textarea>
       </div>
 
       <div class="form-card-title" style="margin: 24px 0 16px;"><i class="fas fa-user"></i> Vos coordonnées</div>
       <div class="form-row">
         <div class="form-group">
-          <label>Votre nom complet</label>
-          <input type="text" id="r_name" class="field-input" placeholder="Prénom Nom">
+          <label for="r_name">Votre nom complet *</label>
+          <input type="text" id="r_name" name="nom_complet" class="field-input" placeholder="Prénom Nom" required>
         </div>
         <div class="form-group">
-          <label>Votre email *</label>
-          <input type="email" id="r_email" class="field-input" placeholder="votre@email.com" required>
+          <label for="r_email">Votre email *</label>
+          <input type="email" id="r_email" name="email" class="field-input" placeholder="votre@email.com" required>
         </div>
       </div>
+      <div class="form-group">
+        <label for="r_phone">Numéro de téléphone *</label>
+        <input type="tel" id="r_phone" name="telephone" class="field-input" placeholder="+243 ..." required>
+      </div>
       <p style="font-size:12px;color:var(--text-dim);margin-bottom:24px;">
-        Vos coordonnées sont utilisées uniquement pour vous informer du traitement de votre signalement. Elles ne seront pas divulguées.
+        Vos coordonnées sont utilisées uniquement pour le traitement administratif du signalement et la communication de confirmation.
       </p>
 
       <button type="submit" class="btn-submit" id="submitBtn">
@@ -190,63 +187,54 @@
 
 <footer>
   <p>Communauté Masambukidi · E.LU.C.CO. · Ordonnance Présidentielle N° 97-031 du 14 Mars 1997<br>
-    <a href="/">Accueil</a> · <a href="/verifier">Vérification</a> · <a href="mailto:masambukidiste1983@gmail.com">Contact</a>
+    <a href="/">Accueil</a> · <a href="/verifier">Vérification</a> · <a href="/sitementions-legales">Mentions légales</a> · <a href="mailto:masambukidiste1983@gmail.com">Contact</a>
   </p>
 </footer>
 
 <script>
-async function submitReport() {
+  const form = document.getElementById('reportForm');
   const btn = document.getElementById('submitBtn');
   const resultBox = document.getElementById('resultBox');
   const resultContent = document.getElementById('resultContent');
-  btn.disabled = true;
-  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
-  const data = {
-    url: document.getElementById('r_url').value.trim(),
-    platform: document.getElementById('r_platform').value,
-    abuse_type: document.getElementById('r_type').value,
-    description: document.getElementById('r_description').value.trim(),
-    reporter_name: document.getElementById('r_name').value.trim(),
-    reporter_email: document.getElementById('r_email').value.trim(),
-  };
-  try {
-    const res = await axios.post('/api/report/submit', data);
-    if (res.data.success) {
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+
+    try {
+      const formData = new FormData(form);
+      const payload = new URLSearchParams(formData).toString();
+
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: payload
+      });
+
       resultBox.className = 'result-box result-success';
       resultBox.style.display = 'block';
       resultContent.innerHTML = `
         <div style="display:flex;align-items:flex-start;gap:16px;">
           <i class="fas fa-check-circle" style="color:#4CAF50;font-size:28px;flex-shrink:0;margin-top:2px;"></i>
           <div>
-            <h3 style="color:#4CAF50;margin-bottom:8px;font-size:16px;">Signalement enregistré avec succès</h3>
-            <p style="color:var(--text-muted);font-size:14px;margin-bottom:12px;">Votre signalement a été transmis à l'Administration. Vous recevrez une confirmation par email.</p>
-            <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:14px 18px;">
-              <div style="font-size:12px;color:var(--text-dim);margin-bottom:4px;">Numéro de référence</div>
-              <div style="font-size:18px;font-weight:700;color:var(--gold);font-family:'Courier New',monospace;">${res.data.ref_number}</div>
-            </div>
-            <p style="font-size:13px;color:var(--text-dim);margin-top:12px;">Conservez ce numéro pour suivre votre signalement sur la page <a href="/verifier" style="color:var(--gold);">Vérification</a>.</p>
+            <h3 style="color:#4CAF50;margin-bottom:8px;font-size:16px;">Signalement transmis avec succès</h3>
+            <p style="color:var(--text-muted);font-size:14px;margin-bottom:12px;">Merci. Votre alerte est enregistrée dans le système Netlify Form. Une confirmation immédiate vous est affichée et l'administration peut recevoir une notification email dès activation dans Netlify.</p>
+            <p style="font-size:13px;color:var(--text-dim);margin-bottom:0;">Consultez le document juridique de référence : <a href="/sitementions-legales" style="color:var(--gold);">Mentions légales officielles</a>.</p>
           </div>
         </div>`;
-      document.getElementById('reportForm').reset();
-      // Tenter d'envoyer un email de confirmation
-      try {
-        await axios.post('/api/email/report-confirm', {
-          reporter_email: data.reporter_email,
-          reporter_name: data.reporter_name,
-          ref_number: res.data.ref_number
-        });
-      } catch(e) { /* email non critique */ }
+      form.reset();
+    } catch (error) {
+      resultBox.className = 'result-box result-error';
+      resultBox.style.display = 'block';
+      resultContent.innerHTML = '<p style="color:#ff8080;"><i class="fas fa-exclamation-circle" style="margin-right:8px;"></i>Échec d\'envoi. Vérifiez votre connexion et réessayez.</p>';
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Envoyer le signalement';
+      resultBox.scrollIntoView({ behavior: 'smooth' });
     }
-  } catch(e) {
-    resultBox.className = 'result-box result-error';
-    resultBox.style.display = 'block';
-    resultContent.innerHTML = `<p style="color:#ff8080;"><i class="fas fa-exclamation-circle" style="margin-right:8px;"></i>${e.response?.data?.error || 'Une erreur est survenue. Veuillez réessayer ou nous contacter directement.'}</p>`;
-  } finally {
-    btn.disabled = false;
-    btn.innerHTML = '<i class="fas fa-paper-plane"></i> Envoyer le signalement';
-    resultBox.scrollIntoView({ behavior:'smooth' });
-  }
-}
+  });
 </script>
 </body>
 </html>

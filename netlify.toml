@@ -28,11 +28,6 @@
   status = 200
 
 [[redirects]]
-  from = "/galerie"
-  to = "/galerie.html"
-  status = 200
-
-[[redirects]]
   from = "/qui-sommes-nous"
   to = "/qui-sommes-nous.html"
   status = 200
@@ -40,6 +35,26 @@
 [[redirects]]
   from = "/admin"
   to = "/admin.html"
+  status = 200
+
+[[redirects]]
+  from = "/administration"
+  to = "/admin.html"
+  status = 200
+
+[[redirects]]
+  from = "/admnistration"
+  to = "/admin.html"
+  status = 200
+
+[[redirects]]
+  from = "/administration.html"
+  to = "/admin.html"
+  status = 301
+
+[[redirects]]
+  from = "/sitementions-legales"
+  to = "/sitementions-legales.html"
   status = 200
 
 [[redirects]]

@@ -40,10 +40,10 @@
       "icons": [{"src": "/static/logo-elucco.png", "sizes": "192x192"}]
     },
     {
-      "name": "Galerie Officielle",
-      "short_name": "Galerie",
-      "description": "Voir la galerie officielle certifiée",
-      "url": "/galerie",
+      "name": "Mentions légales",
+      "short_name": "Légal",
+      "description": "Consulter le cadre juridique officiel",
+      "url": "/sitementions-legales",
       "icons": [{"src": "/static/logo-elucco.png", "sizes": "192x192"}]
     }
   ],
