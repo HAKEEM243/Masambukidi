@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/static/logo-elucco.png">
+  <link rel="shortcut icon" type="image/png" href="/static/logo-elucco.png">
+  <title>À Propos — E.LU.C.CO. — Communauté Masambukidi</title>
+  <meta name="description" content="L'Église Lumière du Christ au Congo (E.LU.C.CO.) et la Communauté Masambukidi. Mission officielle de protection des droits de Sa Majesté Papa Samuel Masambukidi I, Chef Spirituel, Roi Divin du Bassin du Kongo.">
+  <meta name="keywords" content="ELUCCO, Église Lumière Christ Congo, Masambukidi, mission protection, Ord 97-031, Kinshasa RDC">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://masambukidi-protection.pages.dev/qui-sommes-nous">
+  <meta property="og:title" content="À Propos — E.LU.C.CO. — Communauté Masambukidi">
+  <meta property="og:description" content="Mission officielle de protection de l'identité de Sa Majesté Papa Samuel Masambukidi I — E.LU.C.CO.">
+  <meta property="og:image" content="https://masambukidi-protection.pages.dev/static/logo-elucco.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#C9A227">
+  <link rel="apple-touch-icon" href="/static/logo-elucco.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <style>
+    :root{--gold:#C9A227;--gold-light:#E8C84A;--gold-dark:#9B7A1A;--deep-dark:#050508;--dark:#0A0A10;--dark-card:#0F0F1A;--dark-border:#1E1E2E;--text-primary:#F0EDE8;--text-secondary:#A8A5A0;--text-muted:#6B6870;--royal-red:#8B1A1A;--royal-green:#1A5C1A;}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Inter',sans-serif;background:var(--deep-dark);color:var(--text-primary);line-height:1.6;overflow-x:hidden;}
+    ::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-track{background:var(--dark);}::-webkit-scrollbar-thumb{background:var(--gold-dark);border-radius:3px;}
+    .top-bar{background:var(--gold);color:var(--deep-dark);text-align:center;padding:8px 20px;font-size:12px;font-weight:600;letter-spacing:0.5px;}
+    .top-bar a{color:var(--deep-dark);text-decoration:none;font-weight:700;}
+    .alert-ticker{background:var(--royal-red);padding:10px 40px;font-size:13px;font-weight:600;letter-spacing:0.5px;overflow:hidden;white-space:nowrap;}
+    .alert-ticker span{display:inline-block;animation:ticker 35s linear infinite;}
+    @keyframes ticker{0%{transform:translateX(100vw);}100%{transform:translateX(-100%);}}
+    nav{position:sticky;top:0;z-index:1000;background:rgba(5,5,8,0.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,162,39,0.2);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:72px;}
+    .nav-brand{display:flex;align-items:center;gap:14px;text-decoration:none;}
+    .nav-logo{height:48px;width:auto;object-fit:contain;}
+    .nav-brand-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--gold);line-height:1.2;}
+    .nav-brand-sub{font-size:10px;color:var(--text-muted);letter-spacing:1.5px;text-transform:uppercase;}
+    .nav-links{display:flex;align-items:center;gap:4px;list-style:none;}
+    .nav-links a{color:var(--text-secondary);text-decoration:none;font-size:13px;font-weight:500;padding:8px 14px;border-radius:6px;transition:all 0.2s;}
+    .nav-links a:hover,.nav-links .active{color:var(--gold);background:rgba(201,162,39,0.08);}
+    .nav-links .btn-report{background:var(--gold);color:var(--deep-dark)!important;font-weight:700;}
+    .nav-links .btn-report:hover{background:var(--gold-light);}
+    .nav-links .btn-admin{background:rgba(201,162,39,0.1);color:var(--gold)!important;border:1px solid rgba(201,162,39,0.3);font-weight:600;}
+    .page-hero{background:linear-gradient(135deg,#050508 0%,#0A0A18 40%,#0F0820 100%);padding:80px 40px 60px;position:relative;overflow:hidden;}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 50%,rgba(201,162,39,0.05) 0%,transparent 70%);}
+    .page-hero-inner{position:relative;z-index:2;max-width:800px;}
+    .section-tag{font-size:11px;font-weight:700;color:var(--gold);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:16px;}
+    .page-title{font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,52px);font-weight:800;color:#fff;margin-bottom:16px;line-height:1.2;}
+    .page-title span{color:var(--gold);}
+    .page-desc{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text-secondary);font-style:italic;line-height:1.7;}
+    .divider-gold{height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:32px 0;max-width:400px;}
+    .content-wrap{max-width:1200px;margin:0 auto;padding:80px 40px;}
+    .card{background:var(--dark-card);border:1px solid var(--dark-border);border-radius:16px;padding:40px;margin-bottom:32px;transition:border-color 0.3s;}
+    .card:hover{border-color:rgba(201,162,39,0.25);}
+    .card-header{display:flex;align-items:center;gap:20px;margin-bottom:28px;}
+    .card-icon{width:56px;height:56px;background:rgba(201,162,39,0.1);border:1px solid rgba(201,162,39,0.2);border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:22px;flex-shrink:0;}
+    .card-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#fff;}
+    .card-subtitle{font-size:13px;color:var(--text-muted);}
+    .card-text{font-size:15px;color:var(--text-secondary);line-height:1.75;margin-bottom:16px;}
+    .card-text strong{color:var(--text-primary);}
+    .legal-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,162,39,0.1);border:1px solid rgba(201,162,39,0.3);color:var(--gold);font-size:13px;font-weight:600;padding:10px 20px;border-radius:10px;margin-top:16px;}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;}
+    .info-box{background:rgba(255,255,255,0.02);border:1px solid var(--dark-border);border-radius:12px;padding:24px;}
+    .info-box-red{background:rgba(139,26,26,0.06);border:1px solid rgba(139,26,26,0.2);border-radius:12px;padding:24px;}
+    .info-box-green{background:rgba(26,92,26,0.06);border:1px solid rgba(26,92,26,0.2);border-radius:12px;padding:24px;}
+    .info-box-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px;}
+    .info-list{list-style:none;}
+    .info-list li{display:flex;align-items:flex-start;gap:10px;padding:8px 0;font-size:13px;color:var(--text-secondary);border-bottom:1px solid rgba(255,255,255,0.04);}
+    .info-list li:last-child{border-bottom:none;}
+    .info-list li::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;margin-top:6px;flex-shrink:0;}
+    .timeline{position:relative;padding-left:32px;}
+    .timeline::before{content:'';position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--gold),transparent);}
+    .timeline-item{position:relative;margin-bottom:28px;}
+    .timeline-item::before{content:'';position:absolute;left:-28px;top:4px;width:12px;height:12px;background:var(--gold);border-radius:50%;border:2px solid var(--deep-dark);}
+    .timeline-year{font-size:11px;font-weight:700;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;}
+    .timeline-text{font-size:14px;color:var(--text-secondary);line-height:1.65;}
+    .timeline-text strong{color:var(--text-primary);}
+    .btn-primary{background:var(--gold);color:var(--deep-dark);border:none;padding:13px 28px;font-size:14px;font-weight:700;letter-spacing:0.5px;border-radius:8px;cursor:pointer;text-decoration:none;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;}
+    .btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
+    .btn-outline{background:transparent;color:var(--text-primary);border:1px solid rgba(255,255,255,0.2);padding:13px 28px;font-size:14px;font-weight:500;border-radius:8px;cursor:pointer;text-decoration:none;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;}
+    .btn-outline:hover{border-color:var(--gold);color:var(--gold);}
+    footer{background:var(--dark-card);border-top:1px solid var(--dark-border);padding:48px 40px 24px;}
+    .footer-inner{max-width:1200px;margin:0 auto;}
+    .footer-bottom{padding-top:20px;border-top:1px solid var(--dark-border);display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--text-muted);}
+    .footer-bottom a{color:var(--gold);text-decoration:none;}
+    .footer-nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+    .footer-nav a{color:var(--text-muted);text-decoration:none;font-size:13px;padding:6px 12px;border-radius:6px;transition:color 0.2s;}
+    .footer-nav a:hover{color:var(--gold);}
+    .footer-social{display:flex;gap:8px;}
+    .footer-social a{width:34px;height:34px;border-radius:8px;border:1px solid var(--dark-border);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:all 0.2s;}
+    .footer-social a:hover{border-color:var(--gold);color:var(--gold);}
+    @media(max-width:1024px){.two-col{grid-template-columns:1fr;}}
+    @media(max-width:768px){nav{padding:0 20px;}.nav-links{display:none;}.page-hero{padding:60px 20px 40px;}.content-wrap{padding:60px 20px;}.card{padding:24px;}.footer-bottom{flex-direction:column;gap:8px;text-align:center;}}
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  Site officiel de protection — Toute utilisation non autorisée est passible de poursuites &nbsp;|&nbsp;
+  <a href="/signaler">Signaler un abus</a>
+  &nbsp;|&nbsp;
+  <a href="/admin">Administration</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-brand">
+    <img src="/static/logo-elucco.png" alt="Logo E.LU.C.CO." class="nav-logo">
+    <div>
+      <div class="nav-brand-title">E.LU.C.CO.</div>
+      <div class="nav-brand-sub">Protection Officielle</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/qui-sommes-nous" class="active">À Propos</a></li>
+    <li><a href="/galerie">Galerie</a></li>
+    <li><a href="/verifier">Vérification</a></li>
+    
+    <li><a href="/signaler" class="btn-report">Signaler</a></li>
+    <li><a href="/admin" class="btn-admin"><i class="fas fa-lock" style="font-size:11px;"></i> Admin</a></li>
+  </ul>
+</nav>
+
+<!-- TICKER -->
+<div class="alert-ticker">
+  <span>PAPA Masambukidi Samuel Page Officiel &nbsp;|&nbsp; Tous droits réservés — E.LU.C.CO. &nbsp;|&nbsp; Ord. Présidentielle N° 97-031 du 14 Mars 1997 &nbsp;|&nbsp; Roi Divin du Bassin du Kongo — Intronisé le 30 octobre 2025 &nbsp;|&nbsp; PAPA Masambukidi Samuel Page Officiel &nbsp;|&nbsp;</span>
+</div>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-tag">À Propos de Nous</div>
+    <h1 class="page-title">
+      <span>E.LU.C.CO.</span> &amp; la<br>Communauté Masambukidi
+    </h1>
+    <p class="page-desc">
+      L'Église Lumière du Christ au Congo<br>
+      et notre mission de protection officielle
+    </p>
+  </div>
+</div>
+
+<div class="content-wrap">
+
+  <!-- E.LU.C.CO. -->
+  <div class="card">
+    <div class="card-header">
+      <div style="width:72px;height:72px;flex-shrink:0;background:white;border-radius:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+        <img src="/static/logo-elucco.png" alt="Logo E.LU.C.CO." style="height:60px;width:auto;object-fit:contain;">
+      </div>
+      <div>
+        <div class="card-title">E.LU.C.CO.</div>
+        <div class="card-subtitle">Église Lumière du Christ au Congo — Communauté Masambukidiste</div>
+      </div>
+    </div>
+    <div class="divider-gold"></div>
+    <p class="card-text">
+      L'<strong>Église Lumière du Christ au Congo (E.LU.C.CO.)</strong> est une institution religieuse et communautaire congolaise du mouvement Masambukidiste, officiellement reconnue par l'État de la République Démocratique du Congo.
+    </p>
+    <p class="card-text">
+      Son autorité est fondée sur l'<strong>Ordonnance Présidentielle N° 97-031 du 14 Mars 1997</strong>, qui lui confère une personnalité civile officielle — droit de protection contre toute usurpation d'identité, utilisation non autorisée du nom, de l'image ou de la réputation des membres fondateurs.
+    </p>
+    <div class="legal-badge">
+      <i class="fas fa-scroll"></i>
+      Ordonnance Présidentielle N° 97-031 du 14 Mars 1997 — Kinshasa, R.D.C.
+    </div>
+  </div>
+
+  <!-- SA MAJESTÉ -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon" style="background:transparent;padding:0;"><img src="/static/logo-elucco.png" alt="E.LU.C.CO." style="height:52px;width:52px;object-fit:contain;display:block;"></div>
+      <div>
+        <div class="card-title">Sa Majesté Masambukidi I</div>
+        <div class="card-subtitle">Chef Spirituel · Roi Divin du Bassin du Kongo</div>
+      </div>
+    </div>
+    <div class="divider-gold"></div>
+    <p class="card-text">
+      <strong>Sa Majesté Papa Samuel Masambukidi I</strong> est le Chef Spirituel de l'E.LU.C.CO. (Église Lumière du Christ au Congo). Sa stature spirituelle et institutionnelle est reconnue au niveau national et international.
+    </p>
+    <p class="card-text">
+      Il a été intronisé le <strong>30 octobre 2025</strong> en tant que <strong>Roi Divin du Bassin du Kongo</strong>.
+    </p>
+    <div class="two-col">
+      <div class="info-box">
+        <div class="info-box-title" style="color:var(--gold);">
+          <i class="fas fa-id-card" style="margin-right:8px;"></i>Titres Officiels
+        </div>
+        <ul class="info-list">
+          <li>Chef Spirituel de l'E.LU.C.CO.</li>
+          <li>Roi Divin du Bassin du Kongo (depuis 2025)</li>
+          <li>Chef de l'E.LU.C.CO.</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <div class="info-box-title" style="color:var(--gold);">
+          <i class="fas fa-calendar-alt" style="margin-right:8px;"></i>Dates Clés
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">1983</div>
+            <div class="timeline-text">Fondation de l'<strong>E.LU.C.CO.</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">14 Mars 1997</div>
+            <div class="timeline-text"><strong>Ordonnance N° 97-031</strong> — Personnalité civile officielle</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">11 Jan. 2009</div>
+            <div class="timeline-text">Prise de fonction comme <strong>Chef Spirituel</strong></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">1er Déc. 2016</div>
+            <div class="timeline-text">Reconnaissance internationale</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">30 Oct. 2025</div>
+            <div class="timeline-text">Intronisation — <strong>Roi Divin du Bassin du Kongo</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MISSION DE PROTECTION -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+      <div>
+        <div class="card-title">Notre Mission de Protection</div>
+        <div class="card-subtitle">Dispositif juridique et technologique pour protéger l'identité royale</div>
+      </div>
+    </div>
+    <div class="divider-gold"></div>
+    <p class="card-text">
+      Face à la multiplication des abus sur les réseaux sociaux — usurpation d'identité, faux comptes, utilisation non autorisée de l'image et du nom — ce système officiel a été déployé pour centraliser, traiter et résoudre chaque violation de manière juridiquement encadrée.
+    </p>
+    <div class="two-col">
+      <div class="info-box-red">
+        <div class="info-box-title" style="color:#cc3333;">
+          <i class="fas fa-ban" style="margin-right:8px;"></i>Protégé Contre
+        </div>
+        <ul class="info-list">
+          <li>Usurpation d'identité numérique</li>
+          <li>Faux comptes sur les réseaux sociaux</li>
+          <li>Utilisation commerciale non autorisée</li>
+          <li>Diffusion d'images sans permission</li>
+          <li>Diffamation et fausses informations</li>
+          <li>Exploitation religieuse frauduleuse</li>
+        </ul>
+      </div>
+      <div class="info-box-green">
+        <div class="info-box-title" style="color:#4ade80;">
+          <i class="fas fa-check-circle" style="margin-right:8px;"></i>Nos Outils
+        </div>
+        <ul class="info-list">
+          <li>Signalement en ligne 24h/24</li>
+          <li>Vérification de contenus autorisés</li>
+          <li>Documents juridiques PDF officiels</li>
+          <li>Surveillance par mots-clés (Google Alerts style)</li>
+          <li>Analyse par intelligence artificielle</li>
+          <li>Certification de contenus officiels</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon"><i class="fas fa-envelope"></i></div>
+      <div>
+        <div class="card-title">Contact Officiel</div>
+        <div class="card-subtitle">Administration de l'E.LU.C.CO. — Kinshasa, R.D.C.</div>
+      </div>
+    </div>
+    <div class="divider-gold"></div>
+    <div class="two-col">
+      <div class="info-box">
+        <div class="info-box-title" style="color:var(--gold);"><i class="fas fa-at" style="margin-right:8px;"></i>Emails</div>
+        <p style="margin-bottom:12px;font-size:14px;color:var(--text-secondary);">Administration principale :</p>
+        <a href="mailto:masambukidiste1983@gmail.com" style="display:block;color:var(--gold);font-size:14px;font-weight:600;text-decoration:none;margin-bottom:8px;">masambukidiste1983@gmail.com</a>
+        <a href="mailto:dnitufuidi@gmail.com" style="display:block;color:var(--gold);font-size:14px;font-weight:600;text-decoration:none;">dnitufuidi@gmail.com</a>
+      </div>
+      <div class="info-box">
+        <div class="info-box-title" style="color:var(--gold);"><i class="fas fa-share-alt" style="margin-right:8px;"></i>Réseaux Sociaux</div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:8px;">
+          <a href="https://www.youtube.com/@masambukidirtmasofficiel2016" target="_blank" rel="noopener"
+            style="display:inline-flex;align-items:center;gap:10px;color:#ff6060;text-decoration:none;font-size:14px;font-weight:600;">
+            <i class="fab fa-youtube" style="width:20px;"></i> Chaîne YouTube Officielle
+          </a>
+          <a href="https://x.com/Masambukidi4" target="_blank" rel="noopener"
+            style="display:inline-flex;align-items:center;gap:10px;color:#5db8f5;text-decoration:none;font-size:14px;font-weight:600;">
+            <i class="fab fa-x-twitter" style="width:20px;"></i> Twitter / X — @Masambukidi4
+          </a>
+          <a href="https://www.facebook.com/search/top?q=papa%20masambukidi%20samuel%20page%20officiel" target="_blank" rel="noopener"
+            style="display:inline-flex;align-items:center;gap:10px;color:#7a9fd4;text-decoration:none;font-size:14px;font-weight:600;">
+            <i class="fab fa-facebook-f" style="width:20px;"></i> PAPA Masambukidi Samuel Page Officiel
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="text-align:center;padding:40px 0;">
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="/signaler" class="btn-primary">
+        <i class="fas fa-exclamation-triangle"></i> Signaler un abus
+      </a>
+      <a href="mailto:masambukidiste1983@gmail.com" class="btn-outline">
+        <i class="fas fa-file-signature"></i> Demander une autorisation
+      </a>
+      <a href="/galerie" class="btn-outline">
+        <i class="fas fa-images"></i> Galerie officielle
+      </a>
+    </div>
+  </div>
+
+</div><!-- /content-wrap -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:24px;">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <img src="/static/logo-elucco.png" alt="Logo E.LU.C.CO." style="height:48px;">
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--gold);">E.LU.C.CO.</div>
+          <div style="font-size:11px;color:var(--text-muted);">À Propos — Mission Officielle</div>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.youtube.com/@masambukidirtmasofficiel2016" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://x.com/Masambukidi4" target="_blank" rel="noopener" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com/search/top?q=papa%20masambukidi%20samuel%20page%20officiel" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <a href="/">Accueil</a>
+      <a href="/qui-sommes-nous">À Propos</a>
+      <a href="/galerie">Galerie</a>
+      <a href="/verifier">Vérification</a>
+      <a href="mailto:masambukidiste1983@gmail.com">Autorisation</a>
+      <a href="/signaler">Signaler</a>
+      <a href="/admin"><i class="fas fa-lock" style="font-size:10px;margin-right:4px;"></i>Administration</a>
+    </nav>
+    <div class="footer-bottom">
+      <div>© 2024–2026 E.LU.C.CO. · Tous droits réservés</div>
+      <div>Ord. N° 97-031 · Kinshasa, R.D.C. · <a href="/admin">Administration</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

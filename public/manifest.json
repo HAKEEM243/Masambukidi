@@ -1,0 +1,58 @@
+{
+  "name": "Masambukidi Protection — E.LU.C.CO.",
+  "short_name": "Masambukidi",
+  "description": "Système officiel de protection des droits de Sa Majesté Papa Samuel Masambukidi II, Chef Spirituel de l'Église Lumière du Christ au Congo.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050508",
+  "theme_color": "#C9A227",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "scope": "/",
+  "categories": ["legal", "social", "utilities"],
+  "icons": [
+    {
+      "src": "/static/logo-elucco.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/static/logo-elucco.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Signaler un abus",
+      "short_name": "Signaler",
+      "description": "Signaler une utilisation non autorisée",
+      "url": "/signaler",
+      "icons": [{"src": "/static/logo-elucco.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Vérifier un contenu",
+      "short_name": "Vérifier",
+      "description": "Vérifier si un contenu est autorisé",
+      "url": "/verifier",
+      "icons": [{"src": "/static/logo-elucco.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Galerie Officielle",
+      "short_name": "Galerie",
+      "description": "Voir la galerie officielle certifiée",
+      "url": "/galerie",
+      "icons": [{"src": "/static/logo-elucco.png", "sizes": "192x192"}]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/static/sa-majeste.jpg",
+      "sizes": "1024x768",
+      "type": "image/jpeg",
+      "label": "Sa Majesté Masambukidi II"
+    }
+  ]
+}

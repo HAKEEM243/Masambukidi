@@ -1,0 +1,8 @@
+{
+  "name": "masambukidi-protection-netlify",
+  "version": "1.0.0",
+  "description": "Système officiel de protection des droits de Sa Majesté Masambukidi I — E.LU.C.CO.",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
