@@ -1,0 +1,8 @@
+# Désactiver la redirection automatique .html
+/*.html
+  X-Robots-Tag: noindex
+  Cache-Control: no-cache
+
+/admin.html
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff

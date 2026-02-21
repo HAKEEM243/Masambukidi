@@ -1,0 +1,63 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/.netlify/functions/api/sitemap.xml"
+  status = 200
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
+[[redirects]]
+  from = "/signaler"
+  to = "/signaler.html"
+  status = 200
+
+[[redirects]]
+  from = "/verifier"
+  to = "/verifier.html"
+  status = 200
+
+[[redirects]]
+  from = "/galerie"
+  to = "/galerie.html"
+  status = 200
+
+[[redirects]]
+  from = "/qui-sommes-nous"
+  to = "/qui-sommes-nous.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin.html"
+  status = 200
+
+[[redirects]]
+  from = "/autorisation"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/admin.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[functions]
+  node_bundler = "esbuild"
