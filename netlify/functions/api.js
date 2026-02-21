@@ -133,7 +133,7 @@ exports.handler = async function(event, context) {
   // LOGIN
   if (method === 'POST' && rawPath === '/admin/login') {
     const { username, password } = body;
-    if (username === 'admin' && password === 'Masambukidi2024!') {
+    if (username === 'admin' && password === 'masambukidi!2024') {
       return json({
         success: true,
         token: ADMIN_TOKEN,
