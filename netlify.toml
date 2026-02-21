@@ -43,6 +43,11 @@
   status = 200
 
 [[redirects]]
+  from = "/sitementions-legales"
+  to = "/sitementions-legales.html"
+  status = 200
+
+[[redirects]]
   from = "/autorisation"
   to = "/"
   status = 301
